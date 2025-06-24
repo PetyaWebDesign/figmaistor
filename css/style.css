@@ -349,6 +349,31 @@ body {
         gap: 24px;
     }
 
+    .search-and-profile {
+        display: flex;
+        align-items: center;
+        form {
+            margin-right: 18px;
+        }
+        .form-input {
+            position: relative;
+        }
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input[type="text"] {
+            padding: 10px 10px 10px 36px;
+            border: none;
+            color: var(--neutral-color-500);
+            background-color: var(--neutral-color-100);
+            border-radius: 5rem;
+            font-size: 14px;
+        }
+    }
+
     .nav-item {
         gap: 4px;
         font-family: var(--muller-heavy);
