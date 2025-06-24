@@ -574,7 +574,89 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    
+    .title {
+        margin-bottom: 3.2rem;
+    }
+    ul {
+        list-style-type:circle;
+        margin: 20px 0;
+        li {
+            margin-left: 22px;
+        }
+    }
+}
+
+/* taste section */
+.lp-taste-section {
+    padding: 6.4rem 0;
+    .content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-side {
+            display: flex;
+            gap: 24px;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid var(--main-color-500);
+                border-radius: 24px;
+                padding: 24px;
+            }
+        }
+        .right-side {
+            width: 52rem;
+            .title {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+/* ingredients section */
+.lp-ingredients-section {
+    padding: 64px 0;
+    .title {
+        text-align: center;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+        gap: 24px;
+    }
+    .card {
+        border-radius: 24px;
+        overflow: hidden;
+        .image-wrap {
+            width: 100%;
+            height: 20rem;
+            overflow: hidden;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .text-wrap {
+            height: 100%;
+            text-align: center;
+            padding: 24px;
+            background-color: rgb(255, 255, 255, 0.10);
+        }
+        .label {
+            color: var(--secondary-color);
+            font-family: var(--muller-bold);
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .title {
+            margin: 12px 0;
+        }
+    }
 }
 
 
