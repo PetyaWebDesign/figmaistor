@@ -331,6 +331,11 @@ body {
 
 /* header */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
     padding: 20px 32px;
     background-color: var(--white);
     border-radius: 0px 0px 32px 32px;
@@ -410,6 +415,7 @@ body {
             justify-content: center;
         }
     }
+
 }
 
 /* hero section */
