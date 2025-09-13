@@ -141,6 +141,9 @@ body {
     font-family: var(--muller-bold);
     text-transform: uppercase;
     border-radius: 31px;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    cursor: pointer;
+    border: unset;
     &.main {
         padding: 16px 24px;
         background-color: var(--white);
@@ -153,6 +156,30 @@ body {
         padding: 16px;
         width: 100%;
     }
+    /* hover state */ 
+    &:hover {
+        background-color: var(--main-color-500);
+        color: var(--main-color-100);
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+        svg {
+            path {
+                fill: var(--main-color-100);
+                transition: fill .3s ease-in-out;
+            }
+        };
+    }
+    /* focus state */
+    &:focus {
+        background-color: var(--main-color-700);
+        color: var(--main-color-100);
+        svg {
+            path {
+                fill: var(--main-color-100);
+                transition: fill .3s ease-in-out;
+            }
+        };
+    }
+    
 }
 
 /* text */
@@ -377,6 +404,26 @@ body {
             border-radius: 5rem;
             font-size: 14px;
         }
+        /* cart */
+        .cart {
+            position: relative;
+            margin-right: 10px;
+            .quantity {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: var(--warning-color);
+                color: var(--main-color-100);
+                font-family: var(--muller-bold);
+                width: 20px;
+                height: 20px;
+                font-size: 12px;
+            }
+        }
     }
 
     .nav-item {
@@ -420,6 +467,7 @@ body {
 
 /* hero section */
 .hero-section {
+    margin-top: 70px;
     .swiper-wrapper {
         background-color: #FF9CB7;
         border-radius: 1350px;
@@ -690,6 +738,15 @@ body {
     }
 }
 
+/* Beer product list page */
+.product-list-wrapper {
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
 
 
 /* footer */
