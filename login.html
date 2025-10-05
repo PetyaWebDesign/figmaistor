@@ -97,264 +97,50 @@
     <div class="spacer s-74"></div>
     <div class="spacer s-74"></div>
 
-    <!-- beers wrapper -->
-    <section class="product-list-wrapper">
+    <main class="login-page-template">
         <div class="offset-desktop-100">
             <div class="max-w-container w-1238">
-                <h2 class="title s-40">Бири</h2>
-                <div class="spacer s-64"></div>
-                <div class="products">
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/small-beer-1.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
+                <div class="content-wrap">
+                    <div class="login-form">
+                        <h1 class="title s-40">Вход</h1>
+                        <div class="to-register">
+                            <p>Нямаш регистрация? <a href="#">Регистрирай се</a></p>
                         </div>
+                        <!-- login form -->
+                        <form action="#" class="login-form" novalidate>
+                            <div class="form-row">
+                                <label for="email">E-mail</label> 
+                                <input type="email" id="email" name="email" required>
+                                <p class="error-msg">Моля, въведи валиден имейл</p>
+                            </div>
+                            <div class="form-row">
+                                <label for="password">Парола</label>
+                                <input type="password" id="password" name="password" required>
+                                <p class="error-msg">Грешна парола</p>
+                            </div>
+                            <div class="bottom-form-row">
+                                <div class="remember-me">
+                                    <input type="checkbox" name="save-user" id="save-user">
+                                    <label for="save-user">Запомни ме</label>
+                                </div>
+                                <a href="#" class="fotgotten-password">Забравена парола?</a>
+                            </div>
+                            <input type="submit" value="Влизам" class="btn">
+                        </form>
                     </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/small-beer-2.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/selected-beer-1.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/small-beer-3.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/small-beer-4.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/beer-1.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/small-beer-5.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid-item beer-card">
-                        <div class="inner-wrap">
-                            <div class="image-wrap">
-                                <img src="images/beer-1.jpg" alt="">
-                            </div>
-                            <p class="title s-20">Прототип Портър</p>
-                            <div class="info">
-                                <p class="type">Светло</p>
-                                <span class="separator"></span>
-                                <p class="region">България</p>
-                            </div>
-                            <div class="price">
-                                <p class="size">330 мл.</p>
-                                <p class="amount">8.50 лв.</p>
-                            </div>
-                            <a href="#" class="btn buy">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_3066_6774)">
-                                        <path d="M15.55 13.1428C16.3 13.1428 16.96 12.7328 17.3 12.1128L20.88 5.62282C21.25 4.96282 20.77 4.14282 20.01 4.14282H5.21L4.27 2.14282H1V4.14282H3L6.6 11.7328L5.25 14.1728C4.52 15.5128 5.48 17.1428 7 17.1428H19V15.1428H7L8.1 13.1428H15.55ZM6.16 6.14282H18.31L15.55 11.1428H8.53L6.16 6.14282ZM7 18.1428C5.9 18.1428 5.01 19.0428 5.01 20.1428C5.01 21.2428 5.9 22.1428 7 22.1428C8.1 22.1428 9 21.2428 9 20.1428C9 19.0428 8.1 18.1428 7 18.1428ZM17 18.1428C15.9 18.1428 15.01 19.0428 15.01 20.1428C15.01 21.2428 15.9 22.1428 17 22.1428C18.1 22.1428 19 21.2428 19 20.1428C19 19.0428 18.1 18.1428 17 18.1428Z" fill="#F4F4F4"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_3066_6774">
-                                            <rect width="24" height="24" fill="white" transform="translate(0 0.142822)"/>
-                                        </clipPath>
-                                    </defs>
-                                    </svg>
-                                <span>Купи</span>
-                            </a>
-                        </div>
+                    <div class="image-wrap">
+                        <img src="images/login-image.png" alt="login">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
 
-    <div class="spacer s-74"></div>
+    <div class="spacer s-64"></div>
 
-
-     <!-- footer -->
-     <footer class="footer">
+    <!-- footer -->
+    <footer class="footer">
         <div class="offset-desktop-32">
             <div class="max-w-container w-1374">
                 <div class="main-columns">

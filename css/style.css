@@ -468,10 +468,50 @@ body {
 /* hero section */
 .hero-section {
     margin-top: 70px;
-    .swiper-wrapper {
+    .swiper-slide {
         background-color: #FF9CB7;
         border-radius: 1350px;
         padding: 8rem 0;
+    }
+    .content-wrap {
+        position: relative;
+    }
+    .slider-control-btn {
+        position: absolute;
+        top: 50%;
+        z-index: 4;
+        width: 56px;
+        height: 56px;
+        background-color: var(--main-color-100);
+        border: unset;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+        /* transform: translateY(-50%); */
+        &:hover {
+            background-color: var(--main-color-200);
+            transition: background-color .3s ease-in-out;
+        }
+        &.swiper-prev {
+            left: -56px;
+        }
+        &.swiper-next {
+            right: -56px;
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 40px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: var(--white);
+        border: 2px solid var(--main-color-500);
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+            background-color: var(--main-color-500);
+        }
     }
 }
 .hero-slide {
@@ -504,6 +544,8 @@ body {
         font-size: 6.4rem;
     }
 }
+
+
 
 /* beers grid */
 .latest-beers-grid {
@@ -739,14 +781,213 @@ body {
 }
 
 /* Beer product list page */
-.product-list-wrapper {
-    .products {
+.listing-page {
+    .content-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.beers-filter {
+    /* text search */
+    .text-search {
+        position: relative;
+        margin-bottom: 24px;
+        input {
+            width: 100%;
+            background-color: #FDFDFD;
+            border: unset;
+            font-size: 14px;
+            padding: 8px 8px 8px 34px;
+            border-radius: 5rem;
+        }
+        svg {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+    }
+    /* filters */
+    .filter-section {
+        width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        input {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            border-radius: 4px;
+            border: 1px solid var(--main-color-200);
+        }
+        .filter-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--muller-bold);
+            background: var(--white);
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            label {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+          }
+    }
+    /* form section title */
+    .form-section-title {
+        font-family: var(--muller-bold);
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+  
+      .filter-group {
+        border-bottom: 1px solid #eee;
+        
+      }
+  
+
+  
+      .filter-header:hover {
+        background: var(--main-color-100);
+      }
+  
+
+  
+      .filter-options {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+  
+      .filter-options.open {
+        max-height: 400px; 
+      }
+  
+      .filter-option {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px 10px 30px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+        background: var(--white);
+      }
+  
+
+  
+      .filter-option span.count {
+        color: #666;
+        margin-left: 4px;
+      }
+  
+      .arrow {
+        transition: transform 0.3s;
+      }
+  
+      .arrow.rotate {
+        transform: rotate(90deg);
+      }
+}
+
+.beers-listing {
+    width: 65%;
+    .smaller-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 30px;
     }
 }
+
+/* login page */
+.login-page-template {
+    .content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .image-wrap {
+        width: 85rem;
+        height: 85rem;
+        border-radius: 3.2rem;
+        overflow: hidden;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    .to-register {
+        font-size: 16px;
+        margin: 24px 0;
+        a {
+            color: var(--secondary-color);
+        }
+    }
+    .login-form {
+        width: 38rem;
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            gap: 6px;
+            margin-bottom: 24px;
+            input {
+                padding: 8px;
+                border-radius: 12px;
+                border: 1px solid var(--main-color-200);
+                background: var(--white);
+            }
+        }
+        .bottom-form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            a {
+                color: var(--secondary-color);
+            }
+            .remember-me {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            input {
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                border: 1px solid var(--main-color-100);
+            }
+        }
+        input[type="submit"] {
+            background-color: var(--main-color-500);
+            color: var(--white);
+            border: unset;
+            margin-top: 24px;
+            cursor: pointer;
+            font-family: var(--muller-bold);
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 16px;
+            border-radius: 3rem;
+        }
+        .error-msg {
+            color: #f20000;
+            font-size: 14px;
+            display: none;
+        }
+    }
+}
+
+
 
 
 /* footer */
