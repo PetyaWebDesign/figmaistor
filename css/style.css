@@ -182,6 +182,27 @@ body {
     
 }
 
+/* icons */
+.icon {
+    width: 2rem;
+    height: 2rem;
+    &.home-icon {
+        path {
+            fill: var(--black);
+        }
+    }
+    &.beer-icon {
+        path {
+            fill: var(--main-color-500);
+        }
+    }
+    &.leaf-icon {
+        path {
+            fill: var(--main-color-200);
+        }
+    }
+}
+
 /* text */
 .title {
     font-family: var(--muller-bold);
@@ -1063,5 +1084,36 @@ body {
             }
         }
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
